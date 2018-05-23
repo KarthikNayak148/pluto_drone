@@ -1,6 +1,7 @@
 # pluto_drone
 ## plutonode package
-plutonode
+### plutonode node
+this node process the drone commands
 ## plutoserver package
 ### drone_server node
 key_handling.py. <br />
