@@ -31,7 +31,8 @@ class send_data():
 		self.cmd.rcThrottle =1000
 		self.cmd.rcAUX4 =1500
 		self.command_pub.publish(self.cmd)
-		rospy.sleep(.1)
+		rospy.sleep(1)
+		
 	def disarm(self):
 		self.cmd.rcThrottle =1300
 		self.cmd.rcAUX4 = 1200
@@ -45,7 +46,7 @@ class send_data():
 		if self.key_value == 0:         
 			self.disarm()
 		if self.key_value == 70:
-			# self.disarm()
+			self.disarm()
 			self.arm()
 		if self.key_value == 10:
 			self.forward()
